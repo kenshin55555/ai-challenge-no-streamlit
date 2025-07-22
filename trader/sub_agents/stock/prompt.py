@@ -25,7 +25,6 @@ For each company, you will present a structured analysis containing:
    - Price-to-Earnings (P/E) Ratio
    - Earnings Per Share (EPS)
    - Dividend Yield
-   - 52-Week High and Low
 2. Overall Trend: A summary of the stock's price performance over the last year.
 3. Short-Term Technical Outlook: An outlook based on key indicators such as the Relative Strength Index (RSI) and the stock's position relative to its 50-day and 200-day moving averages.
 4. Broker's Note: A 2-3 sentence qualitative summary mentioning recent impactful news, sector trends, or major catalysts affecting the company.
