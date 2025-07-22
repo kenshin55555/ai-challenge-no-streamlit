@@ -14,7 +14,8 @@ gatherer_agent = SequentialAgent(
     description="Agent in charge of retreiving stock and news information",
     sub_agents=[
         stock_agent,
-        news_agent
+        news_agent,
+        analyst_agent
     ],
 )
 
@@ -23,5 +24,5 @@ root_agent = Agent(
         model=model,    # Specifies the Gemini model to power this agent's language understanding and generation.
         description="An agent that orchestrates access to stock information", # A brief, human-readable description of the agent's role.
         instruction=ROOT_PROMPT,
-        tools=[AgentTool(agent=gatherer_agent),AgentTool(agent=analyst_agent)],
+        sub_agents=[gatherer_agent],
     )
