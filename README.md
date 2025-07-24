@@ -45,7 +45,7 @@ Follow these steps to configure your environment and deploy the agent to Google 
 Before you begin, ensure you have the following:
 *   [Google Cloud SDK (gcloud CLI)](https://cloud.google.com/sdk/docs/install) installed and authenticated.
 *   An active Google Cloud Project with billing enabled.
-*   A [Google API Key](https://developers.google.com/maps/documentation/javascript/get-api-key) with the necessary APIs enabled (e.g., Vertex AI API or AI Platform).
+*   A [Google API Key](https://aistudio.google.com/apikey) with the necessary APIs enabled (e.g., Vertex AI API or AI Platform).
 
 ### 2. Environment Configuration
 
@@ -93,9 +93,9 @@ gcloud run deploy trader-agent-service \
 
 2. Open this URL in your web browser.
 
-3. You will see a simple UI where you can type your questions (e.g., "Should I buy GOOGL stock today?") and submit them to the agent. The agent's response will be displayed on the page.
+3. You will see a simple UI where you can type your questions (e.g., "GOOGL , 6 MONTHS, Stock price should rice due to IA adoption?") and submit them to the agent. The agent's response will be displayed on the page.
 
 ### 6. 📚 Helpful Resources
 
-- ADK Deployment Docs: Deploying an ADK App to Cloud Run
-- ADK FastAPI Source: ADK FastAPI CLI Implementation
+- ADK Deployment Docs: [Deploying an ADK App to Cloud Run](https://google.github.io/adk-docs/deploy/cloud-run/)
+- ADK FastAPI Source: [ADK FastAPI CLI Implementation](https://github.com/google/adk-python/blob/main/src/google/adk/cli/fast_api.py)
