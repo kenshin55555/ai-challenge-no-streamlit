@@ -13,7 +13,7 @@ GOOGLE_API_KEY= '[you_own_api_key]'
 
 MODEL=gemini-2.0-flash-exp
 
-- To deploy in cloud run the command : 
+- To deploy in cloud run the command, you need to be inside the folder ai-challenge-no-streamlit : 
 
 ```
 gcloud run deploy trader-agent-service --source . --region $GOOGLE_CLOUD_LOCATION --project $GOOGLE_CLOUD_PROJECT --allow-unauthenticated --set-env-vars="GOOGLE_CLOUD_PROJECT=$GOOGLE_CLOUD_PROJECT,GOOGLE_CLOUD_LOCATION=$GOOGLE_CLOUD_LOCATION,GOOGLE_GENAI_USE_VERTEXAI=$GOOGLE_GENAI_USE_VERTEXAI,MODEL=$MODEL,GOOGLE_API_KEY=$GOOGLE_API_KEY"
