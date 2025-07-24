@@ -4,9 +4,13 @@
 - Set  th env variabls in your terminal : 
 
 GOOGLE_GENAI_USE_VERTEXAI=FALSE
+
 GOOGLE_CLOUD_PROJECT='[your_own_test_project]'
+
 GOOGLE_CLOUD_LOCATION='us-central1'
+
 GOOGLE_API_KEY= '[you_own_api_key]'
+
 MODEL=gemini-2.0-flash-exp
 
 - To deploy in cloud run the command : 
