@@ -1,6 +1,6 @@
 # 1. Start with an official Python base image.
 # Using a "slim" version keeps the final container size smaller.
-FROM python:3.13-slim
+FROM python:3.11-slim
 
 # 2. Set environment variables for the container.
 # This ensures Python output is sent straight to the container logs.
