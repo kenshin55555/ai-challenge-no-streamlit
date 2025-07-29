@@ -16,7 +16,7 @@ The project is organized as follows, separating the agent logic from the deploym
 ```
 /ai-challenge-no-streamlit
 |
-├── agent/
+├── stocks_agent/
 │   ├── __init__.py
 │   ├── agent.py
 │   ├── root_prompt.py
@@ -27,6 +27,12 @@ The project is organized as follows, separating the agent logic from the deploym
 │       │   └── ... (news_agent files)
 │       └── risk_analysis/
 │           └── ... (analyst_agent files)
+|
+├── static/
+|   ├──inde.html 
+|   └──js
+|      ├──apps.js
+|      └──style.css
 |
 ├── .env                  
 ├── main.py               
@@ -99,3 +105,5 @@ gcloud run deploy trader-agent-service \
 
 - ADK Deployment Docs: Deploying an ADK App to Cloud Run
 - ADK FastAPI Source: ADK FastAPI CLI Implementation
+- [ADK FastAPI Source: Custom Audio Streaming app (WebSocket)](https://google.github.io/adk-docs/streaming/custom-streaming-ws/)
+- [Gemini Models list](https://ai.google.dev/gemini-api/docs/models#live-api)
