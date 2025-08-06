@@ -1,3 +1,35 @@
-.agent-message {
-  white-space: pre-wrap; /* This is the key! */
+/*
+ * style.css: Minimal styles for chat bubbles and Markdown formatting.
+ */
+
+/* This rule applies to the agent's message bubbles. */
+.agent-message-bubble {
+    background-color: #e5e7eb; /* A light gray */
+    color: #1f2937;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    align-self: flex-start; /* Aligns to the left */
+    margin-bottom: 1rem;
+    /* This is the most important rule for Markdown formatting */
+    white-space: pre-wrap;
+}
+
+/* This rule applies to the user's message bubbles. */
+.user-message-bubble {
+    background-color: #2563eb; /* A nice blue */
+    color: #ffffff;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    align-self: flex-end; /* Aligns to the right */
+    margin-bottom: 1rem;
+    margin-left: auto; /* Pushes the bubble to the right */
+}
+
+/* Basic styling for lists and bold text inside agent messages */
+.agent-message-bubble ul, .agent-message-bubble ol {
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+.agent-message-bubble strong {
+    font-weight: 600;
 }

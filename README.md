@@ -65,7 +65,7 @@ export GOOGLE_GENAI_USE_VERTEXAI=FALSE
 export GOOGLE_CLOUD_PROJECT="your_gcp_project_id"
 export GOOGLE_CLOUD_LOCATION="us-central1"
 export GOOGLE_API_KEY="your_google_api_key"
-export MODEL="gemini-1.5-flash-001"
+export MODEL="gemini-2.0-flash-001"
 ```
 
 ### 3. Variable Explanations
@@ -107,3 +107,5 @@ gcloud run deploy trader-agent-service \
 - ADK FastAPI Source: ADK FastAPI CLI Implementation
 - [ADK FastAPI Source: Custom Audio Streaming app (WebSocket)](https://google.github.io/adk-docs/streaming/custom-streaming-ws/)
 - [Gemini Models list](https://ai.google.dev/gemini-api/docs/models#live-api)
+- [Multi-agents explicit invocation documentation](https://google.github.io/adk-docs/agents/multi-agents/#c-explicit-invocation-agenttool)
+- [Adk builtin-tools limitations and documentation](https://github.com/google/adk-docs/blob/main/docs/tools/built-in-tools.md)
