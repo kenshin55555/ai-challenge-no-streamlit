@@ -108,4 +108,8 @@ gcloud run deploy trader-agent-service \
 - [ADK FastAPI Source: Custom Audio Streaming app (WebSocket)](https://google.github.io/adk-docs/streaming/custom-streaming-ws/)
 - [Gemini Models list](https://ai.google.dev/gemini-api/docs/models#live-api)
 - [Multi-agents explicit invocation documentation](https://google.github.io/adk-docs/agents/multi-agents/#c-explicit-invocation-agenttool)
+
+### 7. ⚠️ ADK Limitations
+
+- [Sub-Agents and tools limitation in ADK](https://github.com/google/adk-python/issues/53)
 - [Adk builtin-tools limitations and documentation](https://github.com/google/adk-docs/blob/main/docs/tools/built-in-tools.md)
