@@ -16,7 +16,7 @@ The project is organized as follows, separating the agent logic from the deploym
 ```
 /ai-challenge-no-streamlit
 |
-├── agent/
+├── stocks_agent/
 │   ├── __init__.py
 │   ├── agent.py
 │   ├── root_prompt.py
@@ -27,6 +27,12 @@ The project is organized as follows, separating the agent logic from the deploym
 │       │   └── ... (news_agent files)
 │       └── risk_analysis/
 │           └── ... (analyst_agent files)
+|
+├── static/
+|   ├──inde.html 
+|   └──js
+|      ├──apps.js
+|      └──style.css
 |
 ├── .env                  
 ├── main.py               
@@ -59,7 +65,7 @@ export GOOGLE_GENAI_USE_VERTEXAI=FALSE
 export GOOGLE_CLOUD_PROJECT="your_gcp_project_id"
 export GOOGLE_CLOUD_LOCATION="us-central1"
 export GOOGLE_API_KEY="your_google_api_key"
-export MODEL="gemini-1.5-flash-001"
+export MODEL="gemini-2.0-flash-001"
 ```
 
 ### 3. Variable Explanations
@@ -97,5 +103,14 @@ gcloud run deploy trader-agent-service \
 
 ### 6. 📚 Helpful Resources
 
-- ADK Deployment Docs: [Deploying an ADK App to Cloud Run](https://google.github.io/adk-docs/deploy/cloud-run/)
-- ADK FastAPI Source: [ADK FastAPI CLI Implementation](https://github.com/google/adk-python/blob/main/src/google/adk/cli/fast_api.py)
+
+- ADK Deployment Docs: Deploying an ADK App to Cloud Run
+- ADK FastAPI Source: ADK FastAPI CLI Implementation
+- [ADK FastAPI Source: Custom Audio Streaming app (WebSocket)](https://google.github.io/adk-docs/streaming/custom-streaming-ws/)
+- [Gemini Models list](https://ai.google.dev/gemini-api/docs/models#live-api)
+- [Multi-agents explicit invocation documentation](https://google.github.io/adk-docs/agents/multi-agents/#c-explicit-invocation-agenttool)
+
+### 7. ⚠️ ADK Limitations
+
+- [Sub-Agents and tools limitation in ADK](https://github.com/google/adk-python/issues/53)
+- [Adk builtin-tools limitations and documentation](https://github.com/google/adk-docs/blob/main/docs/tools/built-in-tools.md)
