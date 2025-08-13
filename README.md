@@ -104,8 +104,8 @@ gcloud run deploy trader-agent-service \
 ### 6. 📚 Helpful Resources
 
 
-- ADK Deployment Docs: Deploying an ADK App to Cloud Run
-- ADK FastAPI Source: ADK FastAPI CLI Implementation
+- [ADK Deployment Docs: Deploying an ADK App to Cloud Run](https://google.github.io/adk-docs/deploy/cloud-run/#python---gcloud-cli)
+- [Logging in the Agent Development Kit](https://google.github.io/adk-docs/observability/logging/#example-configuration)
 - [ADK FastAPI Source: Custom Audio Streaming app (WebSocket)](https://google.github.io/adk-docs/streaming/custom-streaming-ws/)
 - [Gemini Models list](https://ai.google.dev/gemini-api/docs/models#live-api)
 - [Multi-agents explicit invocation documentation](https://google.github.io/adk-docs/agents/multi-agents/#c-explicit-invocation-agenttool)
